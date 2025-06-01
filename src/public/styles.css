@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #2d2d2d;
+    --accent-color: #3b82f6;
+    --text-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.problem-container {
+    flex: 1;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.workspace {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.problem-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.difficulty {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.difficulty.easy {
+    background-color: #00b8a3;
+}
+
+.toolbar {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.toolbar-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.toolbar-group label {
+    color: var(--text-color);
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.toolbar select,
+.toolbar input[type="range"],
+.toolbar input[type="color"],
+.toolbar button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+}
+
+.toolbar input[type="color"] {
+    padding: 2px;
+    width: 40px;
+    height: 30px;
+}
+
+.toolbar input[type="range"] {
+    width: 100px;
+}
+
+.toolbar button {
+    min-width: 80px;
+}
+
+.toolbar button:hover {
+    background-color: #2563eb;
+}
+
+.canvas-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#drawingCanvas {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.code-editor {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#codeEditor {
+    width: 100%;
+    height: 200px;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: 'Consolas', 'Monaco', monospace;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px 0;
+}
+
+pre {
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+} 
