@@ -1,18 +1,22 @@
-<<<<<<< HEAD
-Send Email to jingwen@kits4kid.com for any questions
-=======
 # LeetCode Drawing Tool
 
 An interactive drawing tool for solving LeetCode-style problems that require visual solutions.
 
 ## Features
-- Interactive drawing canvas
-- AI-powered drawing beautification
-- Problem description and examples
+
+- Interactive drawing canvas with mouse and touch support
+- Color picker and pen thickness control
+- Font conversion options:
+  - Handwriting: Smooth, natural-looking strokes
+  - Geometric: Clean, straight lines with sharp angles
+  - Calligraphy: Elegant, varying line width
+  - Technical: Precise, technical drawing style
+- Undo/Redo functionality
+- Problem description and examples viewer
 - Code editor for solution implementation
-- Real-time drawing feedback
 
 ## Setup
+
 1. Install dependencies:
    ```bash
    npm install
@@ -20,24 +24,32 @@ An interactive drawing tool for solving LeetCode-style problems that require vis
 
 2. Start the development server:
    ```bash
+   npm run dev
+   ```
+
+3. Build for production:
+   ```bash
+   npm run build
+   ```
+
+4. Start production server:
+   ```bash
    npm start
    ```
 
-3. Open http://localhost:3000 in your browser
-
 ## Usage
-1. Read the problem description and examples
-2. Use the drawing canvas to create your solution
-3. Write your code in the code editor
-4. Click "Submit Solution" to submit your answer
 
-## Technologies Used
-- TypeScript
-- Express.js
-- TensorFlow.js
-- HTML5 Canvas
+1. Open http://localhost:3000 in your browser
+2. Read the problem description and examples
+3. Use the drawing tools to create your solution:
+   - Select colors using the color picker
+   - Adjust pen thickness with the slider
+   - Choose a font style and convert your drawing
+4. Write your code in the code editor
+5. Submit your solution
 
 ## Project Structure
+
 ```
 leetcode-drawing-tool/
 ├── src/
@@ -52,10 +64,11 @@ leetcode-drawing-tool/
 │   │       ├── DrawingBeautifier.ts
 │   │       ├── ProblemViewer.ts
 │   │       └── app.ts
+├── dist/
 ├── tsconfig.json
 └── package.json
 ```
 
 ## Contributing
-Feel free to submit issues and enhancement requests! 
->>>>>>> 27e6ba4 (Initial commit: LeetCode Drawing Tool implementation)
+
+Feel free to submit issues and enhancement requests!

@@ -1,23 +1,21 @@
 {
   "name": "leetcode-drawing-tool",
   "version": "1.0.0",
-  "description": "AI-supported drawing tool for educational purposes",
+  "description": "An interactive drawing tool for solving LeetCode-style problems",
   "main": "dist/server.js",
   "scripts": {
-    "start": "ts-node src/server.ts",
-    "dev": "nodemon src/server.ts",
+    "start": "tsc && node dist/server.js",
     "build": "tsc",
+    "dev": "ts-node src/server.ts",
     "watch": "tsc -w"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "@tensorflow/tfjs": "^3.12.0"
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/node": "^16.11.7",
-    "nodemon": "^2.0.15",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.5.2"
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.19",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 } 
