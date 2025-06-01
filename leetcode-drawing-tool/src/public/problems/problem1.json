@@ -1,0 +1,23 @@
+{
+  "id": "drawing-001",
+  "title": "Draw a Binary Tree",
+  "difficulty": "Easy",
+  "description": "Given a binary tree structure, draw it using the canvas provided. The tree should be drawn from top to bottom, with each level properly spaced. Parent nodes should be connected to their children with lines.",
+  "examples": [
+    {
+      "input": "Tree with 3 nodes",
+      "explanation": "Draw a root node with two children"
+    },
+    {
+      "input": "Tree with 7 nodes",
+      "explanation": "Draw a complete binary tree with 3 levels"
+    }
+  ],
+  "constraints": [
+    "The tree should be drawn from top to bottom",
+    "Each level should be properly spaced",
+    "Parent nodes should be connected to children with lines",
+    "Nodes should be drawn as circles"
+  ],
+  "template": "// Your drawing code will be evaluated here\nfunction drawBinaryTree() {\n    // Start drawing here\n}"
+} 

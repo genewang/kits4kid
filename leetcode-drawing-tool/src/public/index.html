@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Drawing Problem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="problem-container">
+            <div class="problem-header">
+                <h1 id="problemTitle">Loading Problem...</h1>
+                <span id="problemDifficulty" class="difficulty">Easy</span>
+            </div>
+            
+            <div class="problem-description">
+                <h2>Description</h2>
+                <div id="problemDescription"></div>
+                
+                <h2>Examples</h2>
+                <div id="problemExamples"></div>
+                
+                <h2>Constraints</h2>
+                <div id="problemConstraints"></div>
+            </div>
+        </div>
+
+        <div class="workspace">
+            <div class="toolbar">
+                <div class="toolbar-group">
+                    <label for="penColor">Color:</label>
+                    <input type="color" id="penColor" value="#000000">
+                </div>
+                <div class="toolbar-group">
+                    <label for="penThickness">Thickness:</label>
+                    <input type="range" id="penThickness" min="1" max="20" value="2">
+                </div>
+                <div class="toolbar-group">
+                    <label for="drawingStyle">Style:</label>
+                    <select id="drawingStyle">
+                        <option value="geometric">Geometric</option>
+                        <option value="organic">Organic</option>
+                        <option value="technical">Technical</option>
+                    </select>
+                </div>
+                <div class="toolbar-group">
+                    <label for="smoothing">Smoothing:</label>
+                    <input type="range" id="smoothing" min="0" max="100" value="50">
+                </div>
+                <div class="toolbar-group">
+                    <label for="fontStyle">Convert to Font:</label>
+                    <select id="fontStyle">
+                        <option value="none">None</option>
+                        <option value="handwriting">Handwriting</option>
+                        <option value="geometric">Geometric</option>
+                        <option value="calligraphy">Calligraphy</option>
+                        <option value="technical">Technical</option>
+                    </select>
+                </div>
+                <div class="toolbar-group">
+                    <button id="clear">Clear</button>
+                    <button id="beautify">Beautify</button>
+                    <button id="convert">Convert to Font</button>
+                    <button id="submit">Submit Solution</button>
+                </div>
+            </div>
+            
+            <div class="canvas-container">
+                <canvas id="drawingCanvas"></canvas>
+            </div>
+            
+            <div class="code-editor">
+                <h3>Your Code</h3>
+                <textarea id="codeEditor" spellcheck="false"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
